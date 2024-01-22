@@ -1,0 +1,25 @@
+{
+    "name": "app",
+    "version": "0.0.0",
+    "main": "dist",
+    "author": {
+        "name": "João Apostulo Neto",
+        "email": "japostulo@gmail.com"
+    },
+    "scripts": {
+        "serve": "tsc && concurrently --kill-others \"tsc -w\" \"electron .\"",
+        "build": "tsc && electron-builder --win",
+        "postinstall": "electron-builder install-app-deps"
+    },
+    "description": "Sistema de auto atendimento",
+    "devDependencies": {
+        "@types/mime-types": "^2.1.4",
+        "electron": "^28.1.4",
+        "electron-builder": "^24.9.1",
+        "electron-reload": "^2.0.0-alpha.1"
+    },
+    "dependencies": {
+        "concurrently": "^8.2.2",
+        "mime-types": "^2.1.35"
+    }
+}

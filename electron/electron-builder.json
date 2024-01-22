@@ -1,0 +1,36 @@
+{
+    "appId": "app",
+    "asar": true,
+    "productName": "app",
+    "directories": {
+        "buildResources": "assets",
+        "output": "release/${version}"
+    },
+    "files": [
+        "dist"
+    ],
+    "electronLanguages": [
+        "pt-BR"
+    ],
+    "win": {
+        "icon": "../src/assets/logo.png",
+        "artifactName": "${productName} v${version}.${ext}"
+    },
+    "linux": {
+        "icon": "../src/assets/logo.png",
+        "category": "AudioVideo",
+        "target": [
+            {
+                "target": "deb"
+            }
+        ],
+        "artifactName": "${productName} v${version}.${ext}"
+    },
+    "nsis": {
+        "include": "installer.nsi",
+        "oneClick": false,
+        "perMachine": false,
+        "allowToChangeInstallationDirectory": false,
+        "deleteAppDataOnUninstall": false
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "composite": true,
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "emitDecoratorMetadata": true,
+
+    "incremental": true,
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM", "WebWorker"],
+    "skipLibCheck": true,
+    "noEmit": false,
+    "outDir": "./dist",
+    "baseUrl": "./"
+  },
+  "include": ["**/*"],
+  "references": [{ "path": "../tsconfig.node.json" }]
+}
